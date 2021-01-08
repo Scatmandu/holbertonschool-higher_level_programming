@@ -1,0 +1,49 @@
+================================
+doctest for 2-matrix_divided.txt
+================================
+``matrix_divided()`` returns the quotient of two numbers
+
+SUCCESSFUL TEST CONDITIONS
+==========================
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+testing dividing matrix by a float
+::
+>>> matrix_divided(matrix=[[3], [6]], 1.5)
+[[2], [4]]
+
+testing dividing matrix by a single digit int
+::
+>>> matrix_divided(matrix=[[3], [6]], 3)
+[[1], [2]]
+
+testing dividing matrix by a double digit int
+::
+>>> matrix_divided(matrix=[[3], [6]], 10)
+[[.3], [.6]]
+
+FAILURE TEST CONDITIONS
+=======================
+testing if the matrix has invalid types
+::
+>>> matrix_divided(matrix=[['string1'], ['string2']], 1)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+testing if div is an invalid type
+::
+>>> matrix_divided(matrix, 'string')
+Traceback (most recent call last):
+TypeError: div must be a number
+
+testing if each row of matrix isn't equal
+::
+>>> matrix_divided(matrix=[[1, 2], [3]], 1)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+testing if div equals 0
+::
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero

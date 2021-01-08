@@ -1,0 +1,33 @@
+============================
+doctest for 3-say_my_name.py
+============================
+``say_my_name()`` - prints a first name and last name
+
+SUCCESSFUL TEST CONDITIONS
+==========================
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+testing printing two strings
+::
+>>> say_my_name('Mango', 'Salsa')
+My name is Mango Salsa
+
+FAILURE TEST CONDITIONS
+
+testing if first_name isn't a string
+::
+>>> say_my_name(5, 'Salsa')
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+testing if last_name isn't a string
+::
+>>> say_my_name('Mango', 420)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+testing if both parameters aren't strings
+::
+>>> say_my_name(4, 20)
+Traceback (most recent call last):
+TypeError: first_name must be a string

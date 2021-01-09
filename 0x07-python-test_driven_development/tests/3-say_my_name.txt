@@ -31,3 +31,9 @@ testing if both parameters aren't strings
 >>> say_my_name(4, 20)
 Traceback (most recent call last):
 TypeError: first_name must be a string
+
+testing print_square with None as an argument
+::
+>>> print_square(None)
+Traceback (most recent call last):
+TypeError: size must be an integer

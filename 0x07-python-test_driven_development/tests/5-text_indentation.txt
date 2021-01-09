@@ -1,0 +1,11 @@
+==============================
+doctest for 5-text_indentation
+==============================
+``text_indentation()`` inserts newlines after certain characters
+
+SUCCESSFUL TEST CONDITIONS
+==========================
+>>> text_indentation = __import__('5-text_indentation').text_indentaion
+
+FAILURE TEST CONDITIONS
+=======================

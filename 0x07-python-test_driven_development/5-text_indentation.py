@@ -10,7 +10,7 @@ def text_indentation(text):
     Arguments:
         text (str): a string of chars
     """
-    for x in text:
+    for index, x in enumerate(text):
         if x == '.':
             print(x, end='')
             print("\n")
@@ -20,5 +20,11 @@ def text_indentation(text):
         elif x == ':':
             print(x, end='')
             print("\n")
+        elif x is ' ' and text[index - 1] is '.':
+            pass
+        elif x is ' ' and text[index - 1] is '?':
+            pass
+        elif x is ' ' and text[index - 1] is ':':
+            pass
         else:
             print(x, end='')

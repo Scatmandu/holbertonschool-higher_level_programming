@@ -26,3 +26,17 @@ testing how print_square handles size < 0
 print_square(-1)
 Traceback (most recent call last):
 ValueError: size must be >= 0
+
+testing how print_square handle size="string"
+::
+print_square("string")
+Traceback (most recent call last):
+ValueError: size must be an integer
+
+testing missing argument
+::
+print_square(None)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+

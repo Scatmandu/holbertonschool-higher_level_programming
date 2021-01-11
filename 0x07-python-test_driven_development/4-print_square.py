@@ -10,14 +10,14 @@ def print_square(size):
     Arguments:
         size (int) - how large to print the square
     """
-    if type(size) is not int:
+    if type(size) is not int or type(size) is None:
         raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >= 0")
     if type(size) is float and size < 0:
         raise TypeError("size must be an integer")
     if size == 0:
-        print()
+        print(end='')
     if type(size) is int:
         for i in range(size):
             for j in range(size):

@@ -2,7 +2,7 @@
 """class that defines Rectangle"""
 
 
-class Square:
+class Rectangle:
     """
     class Rectangle that contains the attributes width and height
 
@@ -20,6 +20,9 @@ class Square:
             width (int): the width of the rectangle
             height (int): the height of the rectangle
         """
+        self.width = width
+        self.height = height
+
     def area(self):
         """
         calculates the area of a rectangle
@@ -28,7 +31,9 @@ class Square:
         Returns:
             the result of width * height
         """
-        result = width * height
+        result = self.__width * self.__height
+        if self.__width == 0 or self.__height == 0:
+            result = 0
         return result
 
     def perimeter(self):
@@ -39,7 +44,7 @@ class Square:
         Returns:
             the result of (2 * height) + (2 * width)
         """
-        result = ((2 * height) + (2 * width))
+        result = ((2 * self.__height) + (2 * self.__width))
         return result
 
     @property
@@ -62,6 +67,13 @@ class Square:
         Args:
             width (int): the width of the rectangle
         """
+        if type(width) is not int:
+            raise TypeError("width must be an integer")
+        if width < 0:
+            raise ValueError("width must be >= 0")
+        else:
+            self.__width = width
+
     @property
     def height(self):
         """
@@ -80,11 +92,9 @@ class Square:
         Args:
             height (int): the height of the rectangle
         """
-    if type(width) is not int:
-        raise TypeError("width must be an integer")
-    if width < 0:
-        raise ValueError("width must be >= 0")
-    if type(height) is not int:
-        raise TypeError("height must be an integer")
-    if height < 0:
-        raise ValueError("height must be >= 0")
+        if type(height) is not int:
+            raise TypeError("height must be an integer")
+        if height < 0:
+            raise ValueError("height must be >= 0")
+        else:
+            self.__height = height

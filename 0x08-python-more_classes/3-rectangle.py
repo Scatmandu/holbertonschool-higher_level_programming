@@ -24,6 +24,13 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
+        """
+        converts our Rectangle into a string
+
+
+        Returns:
+            our Rectangle represented by #'s
+        """
         string = ""
         if self.__height == 0 or self.__width == 0:
             return string

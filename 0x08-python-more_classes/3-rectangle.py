@@ -49,8 +49,6 @@ class Rectangle:
             the result of width * height
         """
         result = self.__width * self.__height
-        if self.__width == 0 or self.__height == 0:
-            result = 0
         return result
 
     def perimeter(self):
@@ -62,6 +60,8 @@ class Rectangle:
             the result of (2 * height) + (2 * width)
         """
         result = ((2 * self.__height) + (2 * self.__width))
+        if self.__width == 0 or self.__height == 0:
+            result = 0
         return result
 
     @property
@@ -100,6 +100,8 @@ class Rectangle:
         Returns:
             int: the value of height
         """
+        return self.__height
+
     @height.setter
     def height(self, height=0):
         """

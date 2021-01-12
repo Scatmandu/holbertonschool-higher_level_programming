@@ -83,6 +83,7 @@ class Rectangle:
         Returns:
             int: the value of height
         """
+        return self.__height
     @height.setter
     def height(self, height=0):
         """

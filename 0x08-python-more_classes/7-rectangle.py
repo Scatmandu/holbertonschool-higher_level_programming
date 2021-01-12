@@ -39,10 +39,10 @@ class Rectangle:
             our Rectangle represented by #'s
         """
         string = ""
-        if self.__height == 0 or self.__width == 0:
+        if self.height == 0 or self.width == 0:
             return string
-        for x in range(self.__height):
-            for y in range(self.__width):
+        for x in range(self.height):
+            for y in range(self.width):
                     string += str(self.print_symbol)
             string += '\n'
         return string

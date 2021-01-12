@@ -45,7 +45,7 @@ class Rectangle:
             for y in range(self.width):
                     string += str(self.print_symbol)
             string += '\n'
-        return string
+        return string[:-1]
 
     def __repr__(self):
         """returns a printable representation of the object"""

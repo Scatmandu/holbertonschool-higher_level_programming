@@ -38,7 +38,7 @@ class Rectangle:
             for y in range(self.__width):
                     string += '#'
             string += '\n'
-        return string
+        return string[:-1]
 
     def area(self):
         """

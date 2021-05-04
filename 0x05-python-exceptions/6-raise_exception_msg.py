@@ -1,4 +1,4 @@
-#!/use/bin/python3
+#!/usr/bin/bash
 def raise_exception_msg(message=""):
     try:
         raise NameError

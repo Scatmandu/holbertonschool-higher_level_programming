@@ -11,22 +11,9 @@ class Rectangle:
         __width (integer): the width of the rectangle
 
     """
-    def __init__(self, height):
-        """
-        Initializes a rectangle's height
 
-        Args:
-            height: the height of the new rectangle instance
-
-        """
-    def __init__(self, width):
-        """
-        Initializes a rectangle's height
-
-        Args:
-            height: the size of the new square instance
-
-        """
+    def __init__(self, width=0, height=0):
+        """Initializes a rectangle class instance"""
 
         self.__height = height
         self.__width = width

@@ -1,0 +1,29 @@
+doctest for 3-say_my_name.py
+============================
+
+``say_my_name()``
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+printing two strings
+::
+>>> say_my_name("asdf", "asdf")
+asdf asdf
+
+if first_name isn't a string
+::
+>>> say_my_name(4, "asdf")
+Traceback (most recent call last)
+TypeError: say_my_name() only accepts strings
+
+if last_name isn't a string
+::
+>>> say_my_name("asdf", 4)
+Traceback (most recent call last)
+TypeError: say_my_name() only accepts strings
+
+if one or both parameters are None
+::
+>>> say_my_name(None, None)
+Traceback (most recent call last)
+TypeError: say_my_name() only accepts strings

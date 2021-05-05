@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """function that prints a first and last name"""
 
+
 def say_my_name(first_name, last_name=""):
     """function that prints a first and last name"""
 
@@ -14,4 +15,3 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("last_name must be a string")
     else:
         print("My name is {} {}".format(first_name, last_name))
-    

@@ -1,4 +1,4 @@
-#!/use/bin/python3
+#!/usr/bin/python3
 """creates a rectangle class with a height and width"""
 
 

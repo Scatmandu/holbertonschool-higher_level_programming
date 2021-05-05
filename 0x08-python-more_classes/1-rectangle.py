@@ -3,17 +3,10 @@
 
 
 class Rectangle:
-    """
-    rectangle class that holds width and height
-
-    Attributes:
-        __height (integer):the height of the rectangle
-        __width (integer): the width of the rectangle
-
-    """
+    """rectangle class that holds width and height"""
 
     def __init__(self, width=0, height=0):
-        """Initializes a rectangle class instance"""
+        """creates a rectangle class with a height and width"""
 
         self.__height = height
         self.__width = width
@@ -38,11 +31,13 @@ class Rectangle:
     @property
     def width(self):
         """getter for private attribute width"""
+
         return self.__width
 
     @width.setter
     def width(self, width):
         """setter for width"""
+
         if isinstance(width, int) is True:
             if width >= 0:
                 self.__width = width

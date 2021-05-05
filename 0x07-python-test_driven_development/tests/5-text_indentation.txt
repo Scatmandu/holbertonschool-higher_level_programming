@@ -1,0 +1,28 @@
+5-text_indentation
+==================
+
+``text_indentation()``
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Testing with text as a string containing ?, ., and :
+::
+	>>> text_indentation("Words? With. Characters:")
+	Words?
+	<BLANKLINE>
+	With.
+	<BLANKLINE>
+	Characters:
+	<BLANKLINE>
+
+Testing with text as an int
+::
+	>>> text_indentation(9)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+Testing with text as None
+::
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	TypeError: text must be a string

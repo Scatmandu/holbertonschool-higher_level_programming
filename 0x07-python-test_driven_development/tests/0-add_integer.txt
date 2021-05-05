@@ -3,41 +3,35 @@ doctest for 0-add_integer.py
 
 ``add_integer()``
 
->>> add_integer = __import__('0-add_integer').add_integer
+	>>> add_integer = __import__('0-add_integer').add_integer
 
 addition of single digit integers
 ::
->>> add_integer(1, 1)
-2
+	>> add_integer(1, 1)
+	2
 
 addition of multi digit numbers
 ::
->>> add_integer(420, 69)
-489
+	>> add_integer(420, 69)
+	489
 
 addition with a negative
 ::
->>> add_integer(-1, 1)
-0
+	>> add_integer(-1, 1)
+	0	
 
 addition with two negatives
 ::
->>> add_integer(-1, -1)
-2
+	>>> add_integer(-1, -1)
+	-2
 
 addition of floats
 ::
->>> add_integer(1.1, 1.1)
-2.2
+	>>> add_integer(1.1, 1.1)
+	2
 
-testing more than two arguments
+testing with string
 ::
->>> add_integer(1, 1, 1)
-Traceback (most recent call last):
-TypeError: add_integer() only takes two arguments
-
-testing with strings
-::
->>> add_integer("asdf", "asdf")
-Traceback (most recent call last):
-TypeError: arguments must be integers
+	>>> add_integer("asdf", 4)
+	Traceback (most recent call last):
+	TypeError: a must be an integer

@@ -93,7 +93,7 @@ class Rectangle:
         """creates an instance of a square rectangle"""
         if type(size) is not int:
             raise TypeError("size must be an integer")
-        elif size is < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
         else:
             return cls(size, size)

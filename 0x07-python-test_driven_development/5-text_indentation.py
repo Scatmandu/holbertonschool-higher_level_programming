@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """inserts two newlines after each . ? and :"""
 
+
 def text_indentation(text):
     """inserts two newlines after each . ? and :"""
 

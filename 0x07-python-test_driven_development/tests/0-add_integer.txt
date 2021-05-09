@@ -35,3 +35,15 @@ testing with string
 	>>> add_integer("asdf", 4)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
+
+missing one argument
+::
+	>>> add_integer(1, None)
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+missing both arguments
+::
+	>>> add_integer(None, None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer

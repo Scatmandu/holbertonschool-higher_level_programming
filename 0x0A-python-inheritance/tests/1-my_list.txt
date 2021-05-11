@@ -13,11 +13,3 @@ Single digit positive ints:
 	>>> my_list.append(3)
 	>>> my_list.print_sorted()
 	[1, 2, 3]
-
-Trying with strings:
-::
-	>>> my_list.append("one")
-	>>> my_list.append("two")
-	>>> my_list.append("three")
-	Traceback (most recent call last):
-	TypeError: must be int

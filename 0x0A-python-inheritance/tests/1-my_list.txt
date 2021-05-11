@@ -1,0 +1,23 @@
+The ``1-my_list`` module
+============================
+
+Import ``MyList`` from ``1-my_list``:
+
+	>>> MyList = __import__('1-my_list').MyList
+	>>> my_list = MyList()
+
+Single digit positive ints:
+::
+	>>> my_list.append(1)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> my_list.print_sorted()
+	[1, 2, 3]
+
+Trying with strings:
+::
+	>>> my_list.append("one")
+	>>> my_list.append("two")
+	>>> my_list.append("three")
+	Traceback (most recent call last):
+	TypeError: must be int

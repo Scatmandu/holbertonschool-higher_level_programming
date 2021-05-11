@@ -10,4 +10,4 @@ Testing with two strings:
 ::
 	>>> base.integer_validator("asdf", "widdly")
 	Traceback (most recent call last):
-	TypeError: name must be an integer
+	TypeError: asdf must be an integer

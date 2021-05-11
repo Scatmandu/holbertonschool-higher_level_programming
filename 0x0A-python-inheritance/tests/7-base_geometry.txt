@@ -1,0 +1,13 @@
+The ``7-base_geometry`` module
+==============================
+
+import ``integer_validator`` from ``7-base_geometry``
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>> base = BaseGeometry()
+
+Testing with two strings:
+::
+	>>> base.integer_validator("asdf", "widdly")
+	Traceback (most recent call last):
+	TypeError: name must be an integer

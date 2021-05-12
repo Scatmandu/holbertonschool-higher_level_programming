@@ -5,6 +5,60 @@ import ``integer_validator`` from ``7-base_geometry``
 
 	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 	>>> base = BaseGeometry()
+	>>> base.area()
+	Traceback (most recent call last):
+	Exception: area() is not implemented
+
+Testing with proper use:
+::
+	>>> base.integer_validator("int", 1)
+
+Testing with value 0:
+::
+	>>> base.integer_validator("asdf", 0)
+	Traceback (most recent call last):
+	ValueError: asdf must be greater than 0
+
+Testing with a negative value:
+::
+	>>> base.integer_validator("asdf", -1)
+	Traceback (most recent call last):
+	ValueError: asdf must be greater than 0
+
+Test with value as tuple:
+::
+	>>> base.integer_validator("asdf", (1,))
+	Traceback (most recent call last):
+	TypeError: asdf must be an integer
+
+Test with value as list:
+	>>> base.integer_validator("asdf", [1])
+	Traceback (most recent call last):
+	TypeError: asdf must be an integer
+
+Test with value as boolean:
+::
+	>>> base.integer_validator("asdf", True)
+	Traceback (most recent call last):
+	TypeError: asdf must be an integer
+
+Test with value as set:
+::
+	>>> base.integer_validator("asdf", {1, 2})
+	Traceback (most recent call last):
+	TypeError: asdf must be an integer
+
+Test with value as None:
+::
+	>>> base.integer_validator("asdf", None)
+	Traceback (most recent call last):
+	TypeError: asdf must be an integer
+
+Testing missing value:
+::
+	>>> base.integer_validator("asdf")
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 Testing with two strings:
 ::

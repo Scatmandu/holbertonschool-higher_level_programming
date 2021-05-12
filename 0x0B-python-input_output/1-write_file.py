@@ -7,7 +7,6 @@ def write_file(filename="", text=""):
 
     count = 0
 
-
     with open(filename, "w") as f:
         f.write(text)
     for char in text:

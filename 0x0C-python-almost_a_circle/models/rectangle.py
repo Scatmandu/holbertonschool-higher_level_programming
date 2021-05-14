@@ -20,22 +20,22 @@ class Rectangle(Base):
     @property
     def width(self):
         """returns private instance attribute width"""
-        return self.__width
+        return self.width
 
     @property
     def height(self):
         """returns private instance attribute height"""
-        return self.__height
+        return self.height
 
     @property
     def x(self):
         """returns private instance attribute x"""
-        return self.__x
+        return self.x
 
     @property
     def y(self):
         """returns private instance attribute y"""
-        return self.__y
+        return self.y
 
     @width.setter
     def width(self, width):

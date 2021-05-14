@@ -12,6 +12,8 @@ class Base:
 
         if id is not None:
             self.id = id
+        elif type(id) is not int:
+            raise TypeError("id must be an integer")
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects

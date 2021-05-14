@@ -2,7 +2,7 @@
 """creates the subclass Rectangle from baseclass Base"""
 
 
-from base.py import Base
+from models.base import Base
 
 
 class Rectangle(Base):

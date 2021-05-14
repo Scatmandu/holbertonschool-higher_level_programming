@@ -12,43 +12,47 @@ class Rectangle(Base):
         """initializes rectangle sublcass from Base"""
 
         super(Rectangle, self).__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
         """returns private instance attribute width"""
-        return self.width
+        return self.__width
 
     @property
     def height(self):
         """returns private instance attribute height"""
-        return self.height
+        return self.__height
 
     @property
     def x(self):
         """returns private instance attribute x"""
-        return self.x
+        return self.__x
 
     @property
     def y(self):
         """returns private instance attribute y"""
-        return self.y
+        return self.__y
 
     @width.setter
     def width(self, width):
         """sets width"""
+        self.__width = width
 
     @height.setter
     def height(self, height):
         """sets height"""
+        self.__height = height
 
     @x.setter
     def x(self, x):
         """sets x"""
+        self.__x = x
 
     @y.setter
     def y(self, y):
         """sets y"""
+        self.__y = y

@@ -23,8 +23,8 @@ class Base:
     def to_json_string(list_dictionaries):
         """returns JSON string representation of list_dictionaries"""
         if list_dictionaries is None:
-            list_dictionaries = []
-            return json.dumps(list_dictionaries)
+            list_dictionaries = "[]"
+        return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):

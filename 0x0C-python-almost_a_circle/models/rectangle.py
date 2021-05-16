@@ -21,6 +21,17 @@ class Rectangle(Base):
         """calculated the area of the rectangle"""
         return self.height * self.width
 
+    def display(self):
+        """print instance of Rectangle using #"""
+        for y in range(self.__y):
+            print()
+        for h in range(self.__height):
+            for x in range(self.__x):
+                print(' ', end="")
+            for w in range(self.__width):
+                print('#', end="")
+            print()
+
     @property
     def width(self):
         """returns private instance attribute width"""

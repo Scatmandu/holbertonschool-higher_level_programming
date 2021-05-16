@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """creates the subclass Square from baseclass Rectangle"""
 
 
@@ -32,7 +33,7 @@ class Square(Rectangle):
         return ('[Square] ({}) {}/{} - {}'
                 .format(self.id, self.x, self.y, self.width))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """assigns args to each attribute"""
         if len(args) is not 0:
             for i in range(len(args)):
@@ -40,19 +41,16 @@ class Square(Rectangle):
                     self.id = args[0]
                 if i == 1:
                     self.width = args[1]
+                    self.height = args[1]
                 if i == 2:
-                    self.height = args[2]
+                    self.x = args[2]
                 if i == 3:
-                    self.x = args[3]
-                if i == 4:
-                    self.y = args[4]
+                    self.y = args[3]
         else:
             if "id" in kwargs:
                 self.id = kwargs["id"]
-            if "width" in kwargs:
-                self.width = kwargs["width"]
-            if "height" in kwargs:
-                self.height = kwargs["height"]
+            if "size" in kwargs:
+                self.size = kwargs["size"]
             if "x" in kwargs:
                 self.x = kwargs["x"]
             if "y" in kwargs:

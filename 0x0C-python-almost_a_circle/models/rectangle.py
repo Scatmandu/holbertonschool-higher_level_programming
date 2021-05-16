@@ -32,6 +32,11 @@ class Rectangle(Base):
                 print('#', end="")
             print()
 
+    def __str__(self):
+        """prints string representation of rectangle instance"""
+        return ('[Rectangle] ({}) {}/{} - {}/{}'
+                .format(self.id, self.x, self.y, self.width, self.height))
+
     @property
     def width(self):
         """returns private instance attribute width"""

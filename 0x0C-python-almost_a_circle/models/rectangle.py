@@ -17,6 +17,10 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    def area(self):
+        """calculated the area of the rectangle"""
+        return self.height * self.width
+
     @property
     def width(self):
         """returns private instance attribute width"""

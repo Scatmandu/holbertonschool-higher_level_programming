@@ -1,5 +1,4 @@
--- selects table to alter
-SELECT TABLE first_table
--- adds columns
-ADD ID 89,
-Add name Holberton School;
+-- selects table to alter and what column to insert into
+INSERT INTO first_table (id, name)
+-- adds values
+VALUES (89, "Holberton School");

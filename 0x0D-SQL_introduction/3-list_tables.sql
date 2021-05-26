@@ -1,4 +1,2 @@
--- selects dayabase
-USE mysql;
--- lists tables
+-- lists tables of database
 SHOW TABLES;

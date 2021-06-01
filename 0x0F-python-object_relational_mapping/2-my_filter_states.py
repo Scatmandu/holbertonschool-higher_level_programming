@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     db = MySQLdb.connect('localhost', argv[1], argv[2], argv[3])
     cursor = db.cursor()
-    sql = "SELECT * FROM states WHERE name = '{}'".format(argv[4])
+    sql = "SELECT * FROM states WHERE BINARY name = '{}'".format(argv[4])
     cursor.execute(sql)
     results = cursor.fetchall()
     for item in results:

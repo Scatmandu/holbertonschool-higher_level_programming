@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    tuppie = (len(sentence), sentence[0])
+    if sentence:
+        tuppie = (len(sentence), sentence[0])
+    else:
+        tuppie = (len(sentence), None)
     return tuppie

@@ -34,19 +34,23 @@ class Rectangle(Base):
                 print("#", end='')
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """assigns arguments to each attribute of Rectangle"""
-        for i in range(len(args)):
-            if i == 0:
-                self.id = args[i]
-            if i == 1:
-                self.__width = args[i]
-            if i == 2:
-                self.__height = args[i]
-            if i == 3:
-                self.__x = args[i]
-            if i == 4:
-                self.__y = args[i]
+        if not args:
+            for key, value in kwargs.items():
+                self.__setattr__(key, value)
+        else:
+            for i in range(len(args)):
+                if i == 0:
+                    self.id = args[i]
+                if i == 1:
+                    self.__width = args[i]
+                if i == 2:
+                    self.__height = args[i]
+                if i == 3:
+                    self.__x = args[i]
+                if i == 4:
+                    self.__y = args[i]
 
     def __str__(self):
         """returns string representation of Rectangle"""
@@ -65,36 +69,44 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """width getter"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """width setter"""
         self.height_width_validator("width", value)
         self.__width = value
 
     @property
     def height(self):
+        """height setter"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """height setter"""
         self.height_width_validator("height", value)
         self.__height = value
 
     @property
     def x(self):
+        """x getter"""
         return self.__x
 
     @x.setter
     def x(self, value):
+        """x setter"""
         self.x_y_validator("x", value)
         self.__x = value
 
     @property
     def y(self):
+        """y getter"""
         return self.__y
 
     @y.setter
     def y(self, value):
+        """y setter"""
         self.x_y_validator("y", value)
         self.__y = value

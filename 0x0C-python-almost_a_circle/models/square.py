@@ -26,7 +26,7 @@ class Square(Rectangle):
         return d
 
     def update(self, *args, **kwargs):
-        """assigns arguments to each attribute of Rectangle"""
+        """assigns arguments to each attribute of Square"""
         if not args:
             for key, value in kwargs.items():
                 self.__setattr__(key, value)
@@ -35,11 +35,11 @@ class Square(Rectangle):
                 if i == 0:
                     self.id = args[i]
                 if i == 1:
-                    self.__width = args[i]
+                    self.__size = args[i]
                 if i == 2:
-                    self.__height = args[i]
-                if i == 3:
                     self.__x = args[i]
+                if i == 3:
+                    self.__y = args[i]
 
     @property
     def size(self):

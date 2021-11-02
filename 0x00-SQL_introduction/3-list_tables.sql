@@ -1,3 +1,3 @@
--- lists all databases
+-- lists all tables of a database
 
-SHOW DATABASES;
+SHOW TABLES;

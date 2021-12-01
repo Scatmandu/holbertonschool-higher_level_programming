@@ -7,6 +7,6 @@ if __name__ == "__main__":
     from sys import argv
 
 
-request = requests.get(argv[1])
-header = request.headers
-print(header.get('X-Request-Id'))
+fard = requests.get(argv[1])
+farder = fard.headers
+print(farder.get('X-Request-Id'))

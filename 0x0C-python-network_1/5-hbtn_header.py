@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-'''This module displays X-Requests-Id'''
+"""requests URL and displays X-Request-Id"""
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import requests
-    import sys
+    from sys import argv
 
-    req = requests.get(sys.argv[1])
-
-    data = req.headers
-
-    print(data.get('X-Request-Id'))
+    request = requests.get(argv[1])
+    header = request.headers
+    print(header.get('X-Request-Id'))
+    

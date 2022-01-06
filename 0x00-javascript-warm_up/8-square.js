@@ -11,4 +11,6 @@ if (numbie) {
     console.log(row);
     row = '';
   }
+} else {
+  console.log('Missing size');
 }

@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""adds 2 tuples"""
+
+
 def add_tuple(tuple_a=(), tuple_b=()):
     if len(tuple_a) == 0:
         new_tup_a = (0, 0)

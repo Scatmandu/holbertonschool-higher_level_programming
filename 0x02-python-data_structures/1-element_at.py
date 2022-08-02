@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""prints the element at a given index"""
+
+
 def element_at(my_list, idx):
     length = len(my_list)
     if not my_list:

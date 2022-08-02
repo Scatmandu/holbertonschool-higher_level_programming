@@ -1,12 +1,12 @@
 #!/usr/bin/node
-
+// implements method charPrint that prints the square using C or X
 const Square0 = require('./5-square');
 
 class Square extends Square0 {
   constructor (size) {
     super(size, size);
   }
-
+  // prints the square using C or X
   charPrint (c) {
     if (typeof (c) === 'undefined') {
       c = 'X';

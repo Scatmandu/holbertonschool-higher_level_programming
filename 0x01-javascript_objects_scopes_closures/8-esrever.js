@@ -1,6 +1,7 @@
 #!/usr/bin/node
+// function that returns the reversed version of a list
 
-exports.esrever = function (list) {
+export function esrever (list) {
   const newList = [];
   let j = 0;
 
@@ -8,4 +9,4 @@ exports.esrever = function (list) {
     newList[j] = list[i];
   }
   return newList;
-};
+}

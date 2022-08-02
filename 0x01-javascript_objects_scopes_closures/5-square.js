@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// construct subclass swuare using super()
 
 const Rectangle = require('./4-rectangle.js');
 

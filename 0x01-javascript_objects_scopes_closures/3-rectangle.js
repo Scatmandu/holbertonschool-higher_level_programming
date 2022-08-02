@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// adds instance method that prints the rectangle
 
 class Rectangle {
   constructor (width, height) {
@@ -7,7 +8,7 @@ class Rectangle {
       this.height = height;
     }
   }
-
+  // prints the rectangle using X
   print () {
     let row = '';
     for (let i = 0; i < this.height; i++) {

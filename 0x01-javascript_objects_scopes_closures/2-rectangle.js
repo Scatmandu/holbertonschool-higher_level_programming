@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// creates a rectangle with valid dimensions or an empty class
 
 class Rectangle {
   constructor (width, height) {

@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""prints quotient using try except finally"""
+
+
 def safe_print_division(a, b):
     try:
         result = a / b

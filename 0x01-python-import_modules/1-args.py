@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""takes in args and prints how many are given"""
+
+
 if __name__ == "__main__":
     from sys import argv
     argc = len(argv)

@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""uses slicing to print different parts of a string"""
+
+
 word = "Holberton"
 word_first_3 = word[0:3]
 word_last_2 = word[-2:]

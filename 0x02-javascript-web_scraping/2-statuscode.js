@@ -1,6 +1,7 @@
 #!/usr/bin/node
+// displays the status code of a GET request
 
-const request = require('request');
+import request from 'request';
 
 request(process.argv[2], (err, response) => {
   if (err) {

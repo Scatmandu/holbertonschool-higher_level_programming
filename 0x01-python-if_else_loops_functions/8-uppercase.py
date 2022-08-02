@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""converts a string to uppercase"""
+
+
 def uppercase(str):
     for x in str:
         x = ord(x)

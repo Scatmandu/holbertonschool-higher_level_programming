@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""it's fizzbuzz lol, if you know you know"""
+
+
 def fizzbuzz():
     for x in range(1, 101):
         if x % 3 == 0 and x % 5 == 0:

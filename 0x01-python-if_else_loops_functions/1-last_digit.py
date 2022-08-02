@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""captures last digit of a number and classifies it"""
+
+
 import random
 number = random.randint(-10000, 10000)
 if number < 0:

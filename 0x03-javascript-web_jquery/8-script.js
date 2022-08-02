@@ -1,5 +1,5 @@
 #!/usr/bin/node
-
+// fetches and lists the title for all movies by using this URL: https://swapi-api.hbtn.io/api/films/?format=json
 const URL = 'https://swapi-api.hbtn.io/api/films/?format=json';
 
 $.getJSON(URL, function (data) {

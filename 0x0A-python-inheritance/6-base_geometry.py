@@ -5,5 +5,5 @@
 class BaseGeometry:
     """class BaseGeometry"""
     def area(self):
-        """it's up there"""
+        """function that adds public instance method area that does nothing atm"""
         raise Exception("area() is not implemented")

@@ -3,7 +3,7 @@
 
 
 def is_same_class(obj, a_class):
-    """does what I typed up there"""
+    """function that returns True if object is an instance of class otherwise False"""
     if type(obj) == a_class:
         return True
     else:

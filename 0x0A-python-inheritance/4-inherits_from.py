@@ -3,7 +3,7 @@
 
 
 def inherits_from(obj, a_class):
-    """it's up there"""
+    """function that checks if an object is a subclass"""
     if issubclass(type(obj), a_class) is True and type(obj) is not a_class:
         return True
     else:

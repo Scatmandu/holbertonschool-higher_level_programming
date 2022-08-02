@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// prints different strings depending on the number of args
 
 const zeroArg = 'No argument';
 const oneArg = 'Argument found';

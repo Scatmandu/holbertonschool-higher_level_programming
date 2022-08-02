@@ -1,4 +1,6 @@
 #!/usr/bin/node
+// stores strings in 3 variables and prints them
+
 const c = 'C is fun';
 const python = 'Python is cool';
 const js = 'JavaScript is amazing';

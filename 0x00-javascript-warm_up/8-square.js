@@ -1,4 +1,5 @@
 #!/usr/bin/node
+//  prints a square using X
 
 const numbie = parseInt(process.argv[2]);
 let row = '';
